@@ -1,0 +1,14 @@
+Alt-Shift-Q -> quotes
+
+VK_OEM_7 |
+7 {
+8 }
+9 [
+0 ]
+OEM_PLUS 00ac
+<, <
+>. >
+Z <<
+X >>
+&#9001;	Left pointing angle bracket
+&#9002;	Right pointing angle bracket
