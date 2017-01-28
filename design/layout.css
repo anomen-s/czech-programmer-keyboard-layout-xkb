@@ -1,8 +1,22 @@
 table { border:2px solid black; }
 td { border:1px solid black; width: 2em; text-align:center; padding: 4px; }
+kbd { font-size:small;display:block; }
 .std { background-color: white }
 .spc { background-color: #dddddd }
-.usl { background-color: #f88 } /* useless (original) mapping, to be changed */
+.usl { background-color: #ff8 } /* useless (original) mapping, to be changed */
+.add { background-color: orange } /* useless (original) mapping, to be changed */
 .nok { background-color: #f00 } /* changed, non final*/
 .aok { background-color: #fcc } /* changed, almost ok, need some more verification if ok */
 .ook { background-color: #0f6 } /* changed, stable */
+
+/*
+todo:
+c-cedille
+º
+lte, gte
+±
+
+
+http://michal.kosmulski.org/computing/articles/custom-keyboard-layouts-xkb.html
+
+*/
