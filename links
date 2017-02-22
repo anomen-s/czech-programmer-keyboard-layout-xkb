@@ -1,0 +1,5 @@
+https://wiki.gentoo.org/wiki/User:Pavlix
+Keyboard
+
+US and Czech qwerty keyboard layouts, toggled with Alt+Shift, with AltGr+Menu as Compose/Multi key. 
+setxkbmap "us,cz(qwerty)" -option grp:alt_shift_toggle,compose:menu-altgr

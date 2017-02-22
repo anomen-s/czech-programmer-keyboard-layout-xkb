@@ -1,0 +1,99 @@
+--- rules/evdev.xml.in	2011-04-06 00:47:53.000000000 +0200
++++ rules/evdev.xml.in	2011-05-03 10:50:29.399497572 +0200
+@@ -2504,6 +2504,12 @@
+             <_description>Czech (US Dvorak with CZ UCW support)</_description>
+           </configItem>
+         </variant>
++        <variant>
++          <configItem>
++            <name>prog</name>
++            <_description>Programmers layout (US layout with accented letters under RAlt )</_description>
++          </configItem>
++        </variant>
+       </variantList>
+     </layout>
+     <layout>
+--- symbols/cz	2011-04-06 00:33:21.000000000 +0200
++++ symbols/cz	2011-05-03 10:46:52.926498124 +0200
+@@ -175,3 +175,81 @@
+ 
+     include "level3(ralt_switch)"
+ };
++
++partial default alphanumeric_keys 
++xkb_symbols "prog" {
++ 
++     // This layout based on czech programmers' keyboard layout from windows nt 
++     // (c) 2007 by anomen
++     // $Id: cz 16 2007-07-14 10:48:28Z ludek $
++
++    include "latin"
++
++    name[Group1]= "Czechia - programmers";
++
++    key <TLDE>	{ [ grave,   asciitilde,      semicolon, dead_abovering ]}; // TODO: replace semicolon
++
++    key <AE01>	{ [         1,     exclam,         plus,       dead_tilde ]};
++    key <AE02>	{ [         2,         at,       ecaron,       dead_caron ]};
++    key <AE03>	{ [         3, numbersign,       scaron,  dead_circumflex ]};
++    key <AE04>	{ [         4,     dollar,       ccaron,       dead_breve ]};
++    key <AE05>	{ [         5,    percent,       rcaron,   dead_abovering ]};
++    key <AE06>	{ [         6, asciicircum,      zcaron,      dead_ogonek ]     };
++    key <AE07>	{ [         7,  ampersand,       yacute,       dead_grave ]	};
++    key <AE08>	{ [         8,   asterisk,       aacute,    dead_abovedot ]	};
++    key <AE09>	{ [         9,  parenleft,       iacute,       dead_acute ]	};
++    key <AE10>	{ [         0, parenright,       eacute, dead_doubleacute ]	};
++    key <AE11>	{ [     minus, underscore,    identical,            U2030 ]	}; // =permille
++    key <AE12>	{ [     equal,       plus,   dead_acute,       dead_caron ]	};
++
++
++    key <AD01>	{ [         q,          Q, doublelowquotemark, leftdoublequotemark ]	};
++    key <AD02>	{ [         w,          W,        U2126,     Nosymbol ]	}; // =ohm sign
++    key <AD03>	{ [         e,          E,     EuroSign,     Nosymbol ]	};
++    key <AD04>	{ [         r,          R,   registered,        U2070 ]	}; // =superscript zero
++    key <AD05>	{ [         t,          T,    trademark,  onesuperior ]	};
++    key <AD06>	{ [         y,          Y,          yen,  twosuperior ]	};
++    key <AD07>	{ [         u,          U,     NoSymbol,threesuperior ]	};
++    key <AD08>	{ [         i,          I,     idotless,     NoSymbol ]	};
++    key <AD09>	{ [         o,          O,           oe,           OE ]	};
++    key <AD10>	{ [         p,          P,    plusminus,    paragraph ]	};
++
++    key <AD11>	{ [bracketleft,  braceleft, uacute, slash ] };
++    key <AD12>	{ [bracketright, braceright, parenright,  parenleft ]	};
++
++    key <AC01>	{ [         a,          A,           ae,           AE ]	};
++    key <AC02>	{ [         s,          S,       ssharp,     sterling ]	};
++    key <AC03>	{ [         d,          D,      dstroke,      Dstroke ]	};
++    key <AC04>	{ [         f,          F, guillemotright,   NoSymbol ]	};
++    key <AC05>	{ [         g,          G, guillemotleft,  onequarter ]	};
++    key <AC06>	{ [         h,          H,        grave,      onehalf ]	};
++    key <AC07>	{ [         j,          J,   apostrophe,threequarters ]	};
++    key <AC08>	{ [         k,          K,     NoSymbol,     NoSymbol ]	};
++    key <AC09>	{ [         l,          L,      lstroke,      Lstroke ]	};
++
++    key <AC10>	{ [ semicolon,    colon,          uring, rightdoublequotemark ]	};
++    key <AC11>	{ [apostrophe, quotedbl,        section,   exclamdown ]	};
++    key <AC12>	{ [  EuroSign, dead_diaeresis, NoSymbol,     NoSymbol ]	};  // not present on most keyboards
++
++    key <BKSL>	{ [ backslash,      bar, dead_diaeresis,    semicolon ]	};
++
++    key <LSGT>	{ [ backslash,        bar,        slash,     NoSymbol ]	};
++    key <AB01>	{ [         z,          Z,       degree,     infinity ]	};
++    key <AB02>	{ [         x,          X,   exclamdown,     Nosymbol ]	};
++    key <AB03>	{ [         c,          C,         cent,    copyright ]	};
++    key <AB04>	{ [         v,          V,     NoSymbol,     NoSymbol ]	};
++    key <AB05>	{ [         b,          B,     NoSymbol,     NoSymbol ]	};
++    key <AB06>	{ [         n,          N,       endash,   numerosign ]	};
++    key <AB07>	{ [         m,          M,       emdash,           mu ]	};
++
++    key <AB08>	{ [     comma,       less,     multiply, questiondown ]	};
++    key <AB09>	{ [    period,    greater,     division,     ellipsis ]	};
++    key <AB10>	{ [     slash,   question, dead_belowdot, dead_abovedot ] };
++
++    key <SPCE>	{ [     space,      space, nobreakspace, nobreakspace ]	};
++
++    key <KPDL>	{ type[Group1]="FOUR_LEVEL_KEYPAD",
++                  [ KP_Delete,      comma,    KP_Delete,   KP_Decimal ]	};
++
++    include "level3(ralt_switch)"
++};
