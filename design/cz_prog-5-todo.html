@@ -4,11 +4,27 @@
 <link rel='stylesheet' type='text/css' href='layout.css' />
 </head>
 <body>
+<p>
+<b>name translations (po/*.po files)</b>
+</p>
 include "level3(ralt_switch)"
 include "nbsp(level3n)"
 (remove default)
 
-<p>Chars to be added:</p>
+<h2>Important issues</h2>
+<pre>
+£ U+00A3 POUND SIGN  -- AltGr+S
+• U+2022 BULLET   -- AltGr+shift-B ?
+¤ U+00A4 CURRENCY SIGN
+ẞ,ß  -- AltGr-S, none
+MACRON - find where used else, orAE02 ?
+DOT BELLOW - AC07/AE09
+AD05 - ™ / ŧ
+œ U+0153 LATIN SMALL LIGATURE OE
+Œ U+0152 LATIN CAPITAL LIGATURE OE
+beta -- altGr-B
+</pre>
+<h2>Chars to be added:</h2>
 <pre>
 Changes"
 SK layout:    gG]Ŋ §!'ß
@@ -16,11 +32,7 @@ SK layout:    gG]Ŋ §!'ß
 DE ,;·×  ß?\¿  dDðÐ gGŋŊ hHħĦ jJ(DOT below-above)
 »«¢›‹©‚›‹»»‹‹
 yY»› xX«‹ cC¢©
-MACRON
-CEDILLA
 
-U+00A3 POUND SIGN
-U+2022 BULLET
 
 Additions"
 Quotes:
@@ -40,11 +52,6 @@ needed for French:
 ¸ U+00B8 CEDILLA
 
 needed for French:
-œ U+0153 LATIN SMALL LIGATURE OE
-Œ U+0152 LATIN CAPITAL LIGATURE OE
-
-Β U+0392 GREEK CAPITAL LETTER BETA
-β U+03B2 GREEK SMALL LETTER BETA
 
 ð U+00F0 LATIN SMALL LETTER ETH
 Ð U+00D0 LATIN CAPITAL LETTER ETH
@@ -54,6 +61,10 @@ needed for French:
 ĳ U+0133 LATIN SMALL LIGATURE IJ
 
 </pre>
+<h2>removed</h2>
+ẞ U+1E9E LATIN CAPITAL LETTER SHARP S</td>
+
+<h2>Links</h2>
 <p>
 http://michal.kosmulski.org/computing/articles/custom-keyboard-layouts-xkb.html
 </p>
