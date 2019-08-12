@@ -1,0 +1,10 @@
+Znaky Á, Í, Ó, Ú pro španělštinu, À, Â, È, Ê, Ë, Ì, Î, Ï, Ô, Œ, œ, Ù, Û pro francouzštinu, Á, À, Â, Ã, ã, Ê, Í, Ó, Ô, Õ, õ, Ú pro portugalštinu a À, È, Í, Ï, Ò, Ó, Ú pro katalánštinu.
+
+Kód 225 (E1hex) se používá pro řecké písmeno beta (β) i pro německé ostré S (ß), což je sice použitelné v nízkém rozlišení na původních adaptérech CGA, ale ve vyšších rozlišeních je to těžko přijatelné. Většina novějších sad glyfů pro kódovou stránku 437 včetně sad vestavěných ve videoadaptérech IBM EGA a VGA, dává na této pozici přednost německému ostrému S.
+
+Přeškrtnuté 'Ø' a 'ø' pro skandinávské jazyky. Jako náhrada by mohl být použit symbol prázdné množiny s kódem 237 (EDhex), ale mezery okolo tohoto znaku způsobují, že jeho použití ve slově je ošklivé. Kódové stránky pro dánštinu/norštinu a islandštinu (865 a 861), nahrazují znak cent (¢) znakem 'ø' a yen (¥) znakem 'Ø'.
+
+Většina symbolů řecké abecedy byla vynechána, a použita pro základní matematické symboly. (Řecké znaky jsou obsaženy v kódových stránkách 737 a 869 pro řecký jazyk.)
+
+Spolu se symboly měn cent (¢), libra šterlinků (£) a japonský jen/čínský yuan (¥) obsahuje několik hlavních evropských symbolů měn: nizozemský gulden (ƒ) a španělská peseta (₧). Vzhledrem k tomu, že španělské peseta nikdy neměla vlastní symbol a byla zkracována různými způsoby jako „Pt“, „Pta“, „Pts“ nebo „Ptas“, je přítomnost znaku pro pesetu neobvyklá. Pravda je, že španělské modely elektrických psacích strojů IBM také měly pro znak pesety vyhrazený kód.
+
